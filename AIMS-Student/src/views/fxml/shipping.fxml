@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label fx:id="screenTitle" layoutX="60.0" layoutY="-9.0" prefHeight="96.0" prefWidth="208.0" text="SHIPPING" textAlignment="CENTER" textFill="#5091e6">
          <font>
@@ -140,17 +140,17 @@
             </Pane>
          </children>
       </GridPane>
-      <Button fx:id="btnConfirmDelivery" alignment="CENTER" contentDisplay="CENTER" layoutX="344.0" layoutY="687.0" mnemonicParsing="false" onMouseClicked="#submitDeliveryInfo" prefHeight="46.0" prefWidth="243.0" style="-fx-background-color: #5091e6; -fx-cursor: hand;" text="Confirm Delivery" textFill="WHITE">
+      <Button fx:id="btnConfirmDelivery" alignment="CENTER" contentDisplay="CENTER" layoutX="883.0" layoutY="569.0" mnemonicParsing="false" onMouseClicked="#submitDeliveryInfo" prefHeight="46.0" prefWidth="243.0" style="-fx-background-color: #5091e6; -fx-cursor: hand;" text="Confirm Delivery" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="24.0" />
          </font>
       </Button>
-      <Label fx:id="errorDisplay" layoutX="437.0" layoutY="624.0" prefHeight="46.0" prefWidth="644.0" text="*These fields cannot be left empty" textFill="#d31616">
+      <Label fx:id="errorDisplay" layoutX="199.0" layoutY="663.0" prefHeight="46.0" prefWidth="644.0" text="*These fields cannot be left empty" textFill="#d31616">
          <font>
             <Font name="Segoe UI" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btnBack" alignment="CENTER" contentDisplay="CENTER" layoutX="774.0" layoutY="687.0" mnemonicParsing="false" onMouseClicked="#backToCart" prefHeight="46.0" prefWidth="243.0" style="-fx-background-color: #5091e6; -fx-cursor: hand;" text="Back To Cart" textFill="WHITE">
+      <Button fx:id="btnBack" alignment="CENTER" contentDisplay="CENTER" layoutX="884.0" layoutY="666.0" mnemonicParsing="false" onMouseClicked="#backToCart" prefHeight="46.0" prefWidth="243.0" style="-fx-background-color: #5091e6; -fx-cursor: hand;" text="Back To Cart" textFill="WHITE">
          <font>
             <Font name="Segoe UI Bold" size="24.0" />
          </font></Button>

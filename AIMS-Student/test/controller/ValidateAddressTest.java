@@ -18,9 +18,9 @@ class ValidateAddressTest {
 
 	@ParameterizedTest
 	@CsvSource({
-		"Ha Noi,true",
-		"so 15 khuong dinh, true",
-		"@hello, false",
+		"Thai Binh,true",
+		"so 8 Dinh Cong, true",
+		"@helloworld, false",
 		"'',false"
 	})
 	void test(String address, boolean expected) {
