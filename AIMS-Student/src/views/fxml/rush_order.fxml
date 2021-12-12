@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0" prefWidth="1252.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="shipping" alignment="TOP_LEFT" layoutX="98.0" layoutY="301.0" prefHeight="73.0" prefWidth="1008.0">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </TextField>
+      <Label fx:id="screenTitle" layoutX="90.0" layoutY="1.0" prefHeight="96.0" prefWidth="396.0" text="Rush Order" textAlignment="CENTER" textFill="#5091e6">
+         <font>
+            <Font name="Segoe UI Bold" size="42.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="4.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/images/Logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#5091e6" layoutX="338.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rush Order Delivery Information" wrappingWidth="576.0">
+         <font>
+            <Font name="Segoe UI Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#5091e6" layoutX="90.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected Delivery Time Interval" wrappingWidth="495.109375">
+         <font>
+            <Font name="Segoe UI" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#5091e6" layoutX="98.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" wrappingWidth="89.109375">
+         <font>
+            <Font name="Segoe UI" size="28.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="Date1" layoutX="187.0" layoutY="201.0" prefHeight="39.0" prefWidth="125.0" promptText="12/12/2020" />
+      <Text fill="#5091e6" layoutX="346.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At" wrappingWidth="56.109375">
+         <font>
+            <Font name="Segoe UI" size="28.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="Hour1" layoutX="411.0" layoutY="201.0" prefHeight="39.0" prefWidth="89.0" promptText="8PM" />
+      <Text fill="#5091e6" layoutX="746.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" wrappingWidth="44.109375">
+         <font>
+            <Font name="Segoe UI" size="28.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="Date2" layoutX="791.0" layoutY="201.0" prefHeight="39.0" prefWidth="125.0" promptText="12/12/2020" />
+      <Text fill="#5091e6" layoutX="950.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At" wrappingWidth="56.109375">
+         <font>
+            <Font name="Segoe UI" size="28.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="Hour2" layoutX="1015.0" layoutY="201.0" prefHeight="39.0" prefWidth="89.0" promptText="8PM" />
+      <Text fill="#5091e6" layoutX="90.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Instruction" wrappingWidth="277.109375">
+         <font>
+            <Font name="Segoe UI" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnContinue" alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="724.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="171.0" style="-fx-background-color: #5091e6;" text="Continue" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" alignment="CENTER" contentDisplay="CENTER" layoutX="717.0" layoutY="724.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="171.0" style="-fx-background-color: #5091e6;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Button>
+      <Text fill="#5091e6" layoutX="90.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The following products will be shipped by rush order" wrappingWidth="664.109375">
+         <font>
+            <Font name="Segoe UI" size="28.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="98.0" layoutY="435.0" prefHeight="267.0" prefWidth="1008.0">
+         <content>
+            <VBox fx:id="vboxCart" prefHeight="265.0" prefWidth="1005.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
